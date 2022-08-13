@@ -24,7 +24,7 @@ const _mint = async (wallet) => {
     try{
       const signer = new ethers.Wallet(wallet, provider);
       const contractInstance = new ethers.Contract(nftAddress, nftABI, signer);
-      const gasTx ={ gasLimit: 300000, gasPrice: convertToHex(10)};
+      const gasTx ={ gasLimit: 300000, gasPrice: convertToHex(30)};
       const tx = await contractInstance.mint( convertToHex(1),gasTx);
       const txHash = tx.hash;
       console.log(`--Tx: ${txHash}`);
