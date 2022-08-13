@@ -1,7 +1,7 @@
 
 //endpoint
 const endpoint = {
-  http:"https://rinkeby.infura.io/v3/"
+  http:"https://eth-rinkeby.alchemyapi.io/v2/UdVl55H5KSJkdnZfXcn47IC_j3EhObCO"
 };
 //web3
 const Web3 = require("web3");
@@ -16,7 +16,6 @@ const nftABI = require("./abi/nft.json");
 const {wallets, nftAddress} = require("./config.json");
 
 const run = async () => {
-  console.log('wallets',wallets);
   for(let i = 0; i < wallets.length; i++){
     _mint(wallets[i]);
   }
