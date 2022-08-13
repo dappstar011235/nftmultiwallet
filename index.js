@@ -1,7 +1,7 @@
 
 //endpoint
 const endpoint = {
-  http:"https://eth-rinkeby.alchemyapi.io/v2/UdVl55H5KSJkdnZfXcn47IC_j3EhObCO"
+  http:"https://rinkeby.infura.io/v3/"
 };
 //web3
 const Web3 = require("web3");
